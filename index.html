@@ -1,0 +1,543 @@
+
+                        <p style="margin: 15px 0;"><strong>Key Findings:</strong></p>
+                        <ul style="margin-left: 20px;">
+                            <li><strong>Strong Positive Correlations:</strong> Log GDP per capita, life expectancy, and social support all showed strong positive relationships with national happiness levels</li>
+                            <li><strong>Freedom Impact:</strong> Countries with high freedom of choice consistently reported higher happiness scores compared to low-freedom countries</li>
+                            <li><strong>Corruption Effect:</strong> Identified an inverse relationship between perceived corruption and happiness - countries with lower corruption rates reported significantly higher well-being</li>
+                            <li><strong>Extreme Cases:</strong> Afghanistan ranked lowest (1.45 happiness score) with 55.2 life expectancy and 73.8% corruption perception, while Finland topped the rankings (7.70 happiness) with 71.3 life expectancy and only 18.5% corruption perception</li>
+                            <li><strong>Economic Context Matters:</strong> When segmented by social support levels, the relationship between GDP and happiness varied, suggesting that strong social networks can buffer economic disparities</li>
+                        </ul>
+                        
+                        <div class="project-image">
+                            <img src="https://i.imgur.com/placeholder1.png" alt="Happiness trends over time for Japan, Ecuador, and United Kingdom" style="max-width: 100%; height: auto;">
+                            <p><em>Figure 1: Comparative happiness trends (2005-2023) for Japan, Ecuador, and United Kingdom showing divergent patterns. The United Kingdom maintained consistently high happiness levels (7.0+), while Ecuador showed significant volatility with a notable decline from 2016-2020, and Japan remained stable in the mid-range (6.0-6.5).</em></p>
+                        </div>
+                        
+                        <div class="project-image">
+                            <img src="https://i.imgur.com/placeholder2.png" alt="Life expectancy distribution across countries" style="max-width: 100%; height: auto;">
+                            <p><em>Figure 2: Distribution of life expectancy across 137 countries in 2023. The histogram shows a right-skewed distribution with most countries clustering between 65-75 years, revealing significant global health disparities that correlate with happiness levels.</em></p>
+                        </div>
+                        
+                        <div class="project-image">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAHCCAYAAAAVH0Y4AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAPYQAAD2EBqD+naQAAADh0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uMy4xLjIsIGh0dHA6Ly9tYXRwbG90bGliLm9yZy8li6FKAAAgAElEQVR4nOzdeXhU9d3+8fdnZrKRQEggEMIiICCyKCgqghuCuNRqW1tbq3Vp1brV2tZq+7Ntq9ZqW7u4tK7FpVrrUutW917RqogiKCKCgCzKkpCFhOzzPX+cQQY3IAOZnJnk/bouLpIzh5l7EvDmM9/z+Zi7CwAAAIkTijoAAACgtyFgAQAAJBgBCwAAIMEIWAAAAAlGwAIAAEgwAhYAAECCEbAAAAASTEQHAGaWIWmWpI2SmiIOAwAA9B1pkvaVNMvdqxL5xKEDVoJwtSjqIAAAoM86UtLiRD5hMgSsjZL00ksvaezYsVFnAQAAfcCqVat08sknS7EckkhJErBaJWns2LEqKSmJOgsAAPQ9CT0NiZPcAQAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyABQAAkGAELAAAgAQjYAEAACQYAQsAACDBCFgAAAAJRsACAABIMAIWAABAghGwAAAAEoyA<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Hobbie - Professional Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #00205b;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover, nav a.active {
+            background-color: #004080;
+        }
+        
+        /* Home Page */
+        .home-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 80px 40px;
+            flex-grow: 1;
+            background: linear-gradient(135deg, #00205b 0%, #004080 100%);
+            color: white;
+        }
+        
+        .home-page h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .home-page .headline {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            font-weight: 300;
+            max-width: 700px;
+        }
+        
+        .home-links {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .home-links a {
+            background-color: white;
+            color: #00205b;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block;
+        }
+        
+        .home-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .linkedin-badge {
+            margin-top: 40px;
+        }
+        
+        /* Content Pages */
+        .content {
+            padding: 40px;
+            flex-grow: 1;
+            display: none;
+        }
+        
+        .content.active {
+            display: block;
+        }
+        
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        .about-content p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+        
+        section {
+            margin-bottom: 35px;
+        }
+        
+        h2 {
+            color: #00205b;
+            border-bottom: 3px solid #004080;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        
+        .education-item, .experience-item, .activity-item, .project-item {
+            margin-bottom: 25px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+        }
+        
+        .item-title {
+            font-weight: bold;
+            color: #00205b;
+            font-size: 1.1em;
+        }
+        
+        .item-subtitle {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        
+        .item-date {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #004080;
+        }
+        
+        .skill-category h3 {
+            color: #00205b;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+        
+        .skill-category p {
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        
+        .gpa {
+            color: #004080;
+            font-weight: bold;
+        }
+        
+        .project-placeholder {
+            background-color: #f0f7ff;
+            border: 2px dashed #004080;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            color: #666;
+        }
+        
+        .project-placeholder h3 {
+            color: #00205b;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .home-page h1 {
+                font-size: 2.5em;
+            }
+            
+            .home-page .headline {
+                font-size: 1.2em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')" class="nav-link active">Home</a></li>
+                <li><a href="#" onclick="showPage('about')" class="nav-link">About</a></li>
+                <li><a href="#" onclick="showPage('resume')" class="nav-link">Resume</a></li>
+                <li><a href="#" onclick="showPage('projects')" class="nav-link">Projects</a></li>
+            </ul>
+        </nav>
+        
+        <!-- HOME PAGE -->
+        <div id="home" class="home-page active">
+            <h1>Luke Hobbie</h1>
+            <p class="headline">Villanova University | Analytics & Statistics | Turning Data into Insight</p>
+            
+            <div class="home-links">
+                <a href="https://www.linkedin.com/in/luke-hobbie/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        
+        <!-- ABOUT PAGE -->
+        <div id="about" class="content">
+            <h2 style="text-align: center; margin-bottom: 30px;">About Me</h2>
+            
+            <div class="about-content">
+                <p>Analytics-focused student at Villanova University (3.92 GPA, Dean's List) with a strong foundation in statistics and applied data analysis. I combine rigorous scientific training with hands-on experience using R to analyze real-world datasets, ranging from global happiness indicators to healthcare technology metrics.</p>
+                
+                <p>During my internship with Trem HealthTech R&D in London, I improved backend data infrastructure and built analytics dashboards that supported clinical decision-making. Through academic and applied projects, I've developed statistical models, identified meaningful patterns, and communicated insights clearly to both technical and non-technical audiences.</p>
+                
+                <p>My athletic background has shaped a team-first mindset, accountability, and the ability to execute under pressure. I thrive in environments where analytical rigor meets creative problem-solving.</p>
+                
+                <p>I am currently seeking opportunities in data analytics, healthcare technology, and STEM-focused roles where I can contribute immediately while continuing to grow technically and professionally. Always open to connecting with others who value thoughtful analysis and impactful work.</p>
+            </div>
+        </div>
+        
+        <!-- RESUME PAGE -->
+        <div id="resume" class="content">
+            <h2 style="text-align: center; margin-bottom: 30px;">Resume</h2>
+            
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <div class="item-header">
+                        <div class="item-title">Villanova University</div>
+                    </div>
+                    <div class="item-subtitle">MS in Applied Statistics and Data Science</div>
+                    <div class="item-date">Expected Graduation: December 2027</div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="item-subtitle">BS in Comprehensive Science, Minor: Statistics</div>
+                    <div class="item-date">Expected Graduation: December 2026 | Dean's List | <span class="gpa">GPA: 3.92/4.00</span></div>
+                    <p style="margin-top: 10px;"><strong>Selected Courses:</strong> Applied Statistical Models, Multivariable Calculus, Advanced Physics/Chemistry/Biology</p>
+                </div>
+            </section>
+            
+            <section id="experience">
+                <h2>Professional Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">Trem (HealthTech R&D), Villanova University</div>
+                        <div class="item-date">June 2025 - July 2025</div>
+                    </div>
+                    <div class="item-subtitle">Data and Insights Intern | London, UK</div>
+                    <ul>
+                        <li>Conducted comprehensive analysis on tremor-tracking technologies and data methodologies, formulating product development strategy for next-generation health monitoring devices</li>
+                        <li>Researched clinical tremor scales and signal processing methods to determine optimal quantitative evaluation metrics for patient assessment</li>
+                        <li>Improved backend data infrastructure using Supabase and SQL, enhancing database performance and data integrity across multi-tenant architecture</li>
+                        <li>Collaborated with design team on layout and visuals to enhance clarity and usability of analytics dashboards for clinical practitioners</li>
+                        <li>Pitched innovative product ideas for the RCA Innovation Launchpad presentation to potential investors and stakeholders</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">Alpha Phi Omega, Villanova University</div>
+                        <div class="item-date">January 2025 - Present</div>
+                    </div>
+                    <div class="item-subtitle">Social Committee Member | Lancaster, PA</div>
+                    <ul>
+                        <li>Planned and coordinated events to improve member engagement and foster community building within the organization</li>
+                        <li>Helped design and launch a service project to benefit wildlife preservation, coordinating volunteer efforts and resources</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">Harvey Cedars Bible Conference</div>
+                        <div class="item-date">June 2024 - August 2024</div>
+                    </div>
+                    <div class="item-subtitle">Manager of Activity Center | Harvey Cedars, NJ</div>
+                    <ul>
+                        <li>Supervised and organized weekly recreational activities for over 100 participants, ensuring engaging and age-appropriate programming</li>
+                        <li>Ensured safety protocols and inclusive participation for all attendees through careful planning and risk management</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="activities">
+                <h2>Extracurricular & Community Engagement</h2>
+                
+                <div class="activity-item">
+                    <div class="item-header">
+                        <div class="item-title">Sports Analytics Club, Villanova University</div>
+                        <div class="item-date">January 2024 - Present</div>
+                    </div>
+                    <ul>
+                        <li>Participate in weekly discussions on advanced sports metrics including WAR (Wins Above Replacement), EPA (Expected Points Added), APM (Adjusted Plus-Minus), and xG (Expected Goals)</li>
+                        <li>Evaluate player and team performance through comprehensive data visualizations in R, utilizing ggplot2 and other analytics packages</li>
+                    </ul>
+                </div>
+                
+                <div class="activity-item">
+                    <div class="item-header">
+                        <div class="item-title">Leadership STEM, Villanova University</div>
+                        <div class="item-date">August 2024 - Present</div>
+                    </div>
+                    <ul>
+                        <li>Selected for a competitive STEM leadership cohort focused on professional development, networking, and peer mentoring within the sciences</li>
+                    </ul>
+                </div>
+                
+                <div class="activity-item">
+                    <div class="item-header">
+                        <div class="item-title">Special Olympics, Villanova University</div>
+                        <div class="item-date">November 2024 - Present</div>
+                    </div>
+                    <ul>
+                        <li>Served food to over 500 athletes and 1,000 volunteers during the world's largest student-run Special Olympics event, demonstrating commitment to community service</li>
+                    </ul>
+                </div>
+                
+                <div class="activity-item">
+                    <div class="item-header">
+                        <div class="item-title">DREAMS (Discovering Resources Exploring Advanced Mathematics and Statistics), Villanova University</div>
+                        <div class="item-date">May 2024</div>
+                    </div>
+                    <ul>
+                        <li>Chosen as 1 of 2 first-year students to explore graduate-level research and career opportunities in statistics and data science</li>
+                        <li>Engaged with faculty members to discuss mathematics research careers, methodologies, and pathways to graduate education</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="skills">
+                <h2>Technical Skills & Knowledge</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming & Data Analysis</h3>
+                        <p><strong>R:</strong> Statistical modeling, data visualization (ggplot2), data manipulation (dplyr, tidyr), ANOVA, confidence intervals, hypothesis testing, regression analysis</p>
+                        <p><strong>SQL (PostgreSQL):</strong> Database design, Supabase implementation, RLS policies, multi-tenant database management, query optimization</p>
+                        <p><strong>Java:</strong> Object-oriented programming, applied data structures to enhance program efficiency and performance</p>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Tools & Software</h3>
+                        <p><strong>Microsoft Excel & Office:</strong> Advanced statistical functions, pivot tables, data charts, visualizations, and complex formula implementation</p>
+                        <p><strong>Data Visualization:</strong> Creating compelling visual narratives from complex datasets using R and Excel</p>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Certifications</h3>
+                        <p><strong>Bloomberg Market Concepts (BMC):</strong> Completed comprehensive modules in Economic Indicators, Currencies, Fixed Income, and Equities, demonstrating understanding of financial markets and data analysis</p>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Interests & Passions</h3>
+                        <p>Sports Analytics Enthusiast | Community Service Advocate | Statistical Research | Data-Driven Problem Solving</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- PROJECTS PAGE -->
+        <div id="projects" class="content">
+            <h2 style="text-align: center; margin-bottom: 30px;">R Analytics Projects</h2>
+            
+            <section>
+                <div class="project-item">
+                    <div class="project-content">
+                        <h3>Global Happiness Index: Analyzing Economic and Social Predictors of National Well-being</h3>
+                        
+                        <p style="margin: 15px 0;"><strong>Project Overview:</strong> Conducted a comprehensive analysis of the World Happiness dataset to identify key economic and social factors that predict national happiness levels across 137+ countries in 2023.</p>
+                        
+                        <p style="margin: 15px 0;"><strong>Tools & Technologies:</strong> R (tidyverse, ggplot2, dplyr), Statistical Analysis, Data Visualization</p>
+                        
+                        <p style="margin: 15px 0;"><strong>Methodology:</strong></p>
+                        <ul style="margin-left: 20px;">
+                            <li>Performed exploratory data analysis on multiple happiness indicators including GDP per capita, life expectancy, social support, freedom of choice, and corruption levels</li>
+                            <li>Created visualizations to identify distribution patterns and outliers across demographic variables</li>
+                            <li>Conducted correlation analysis between happiness scores and economic/social factors using scatter plots and regression trend lines</li>
+                            <li>Segmented countries by social support levels to analyze differential impacts of economic factors</li>
+                            <li>Performed comparative analysis of happiness trends across multiple countries over time</li>
+                        </ul>
+                        
+                        <p style="margin: 15px 0;"><strong>Key Findings:</strong></p>
+                        <ul style="margin-left: 20px;">
+                            <li><strong>Strong Positive Correlations:</strong> Log GDP per capita, life expectancy, and social support all showed strong positive relationships with national happiness levels</li>
+                            <li><strong>Freedom Impact:</strong> Countries with high freedom of choice consistently reported higher happiness scores compared to low-freedom countries</li>
+                            <li><strong>Corruption Effect:</strong> Identified an inverse relationship between perceived corruption and happiness - countries with lower corruption rates reported significantly higher well-being</li>
+                            <li><strong>Extreme Cases:</strong> Afghanistan ranked lowest (1.45 happiness score) with 55.2 life expectancy and 73.8% corruption perception, while Finland topped the rankings (7.70 happiness) with 71.3 life expectancy and only 18.5% corruption perception</li>
+                            <li><strong>Economic Context Matters:</strong> When segmented by social support levels, the relationship between GDP and happiness varied, suggesting that strong social networks can buffer economic disparities</li>
+                        </ul>
+                        
+                        <p style="margin: 15px 0;"><strong>Business Applications:</strong> This analysis demonstrates skills applicable to market research, policy analysis, economic forecasting, and social impact assessment - crucial for organizations making international investment decisions or developing social programs.</p>
+                        
+                        <p style="margin: 15px 0;"><strong>Technical Highlights:</strong></p>
+                        <ul style="margin-left: 20px;">
+                            <li>Data filtering and transformation using dplyr functions (group_by, summarize, mutate)</li>
+                            <li>Advanced ggplot2 visualizations including histograms, scatter plots with trend lines, boxplots, and multi-series line charts</li>
+                            <li>Statistical methods including median calculations, categorical variable creation, and comparative analysis</li>
+                            <li>Created reproducible analysis workflow with clear documentation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-placeholder">
+                        <h3>📊 Project 2: [Your Project Title Here]</h3>
+                        <p style="margin-top: 10px;">Add your second R analytics project here demonstrating your ability to extract meaningful insights from data.</p>
+                        <p style="margin-top: 10px; font-size: 0.9em;">
+                            <strong>Suggested content:</strong> Project description, dataset used, R techniques applied (e.g., regression modeling, data cleaning, visualization), 
+                            key insights discovered, and link to GitHub repository or report.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Luke Hobbie. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script>
+        function showPage(pageName) {
+            // Hide all pages
+            document.getElementById('home').classList.remove('active');
+            document.querySelectorAll('.content').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Remove active class from all nav links
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            
+            // Show selected page
+            if (pageName === 'home') {
+                document.getElementById('home').classList.add('active');
+                document.querySelector('a[onclick*="home"]').classList.add('active');
+            } else {
+                document.getElementById(pageName).classList.add('active');
+                document.querySelector(`a[onclick*="${pageName}"]`).classList.add('active');
+            }
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
