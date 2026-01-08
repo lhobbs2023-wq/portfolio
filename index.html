@@ -108,10 +108,6 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
         
-        .linkedin-badge {
-            margin-top: 40px;
-        }
-        
         /* Content Pages */
         .content {
             padding: 40px;
@@ -202,18 +198,31 @@
             font-weight: bold;
         }
         
-        .project-placeholder {
-            background-color: #f0f7ff;
-            border: 2px dashed #004080;
-            padding: 30px;
+        .project-content {
+            background-color: #f9f9f9;
+            padding: 20px;
             border-radius: 8px;
-            text-align: center;
-            color: #666;
+            border-left: 4px solid #004080;
         }
         
-        .project-placeholder h3 {
+        .project-content h3 {
             color: #00205b;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .project-content p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        
+        .project-content ul {
+            margin: 10px 0 10px 20px;
+        }
+        
+        .project-content li {
+            margin-bottom: 8px;
+            line-height: 1.5;
         }
         
         footer {
@@ -380,6 +389,7 @@
                     <div class="skill-category">
                         <h3>Programming & Data Analysis</h3>
                         <p><strong>R:</strong> Statistical modeling, data visualization (ggplot2), data manipulation (dplyr, tidyr), ANOVA, confidence intervals, hypothesis testing, regression analysis</p>
+                        <p><strong>SAS:</strong> PROC procedures, data merging, statistical analysis, data management</p>
                         <p><strong>SQL (PostgreSQL):</strong> Database design, Supabase implementation, RLS policies, multi-tenant database management, query optimization</p>
                         <p><strong>Java:</strong> Object-oriented programming, applied data structures to enhance program efficiency and performance</p>
                     </div>
@@ -405,7 +415,7 @@
         
         <!-- PROJECTS PAGE -->
         <div id="projects" class="content">
-            <h2 style="text-align: center; margin-bottom: 30px;">R Analytics Projects</h2>
+            <h2 style="text-align: center; margin-bottom: 30px;">Data Analytics Projects</h2>
             
             <section>
                 <div class="project-item">
@@ -447,13 +457,43 @@
                 </div>
                 
                 <div class="project-item">
-                    <div class="project-placeholder">
-                        <h3>📊 Project 2: [Your Project Title Here]</h3>
-                        <p style="margin-top: 10px;">Add your second R analytics project here demonstrating your ability to extract meaningful insights from data.</p>
-                        <p style="margin-top: 10px; font-size: 0.9em;">
-                            <strong>Suggested content:</strong> Project description, dataset used, R techniques applied (e.g., regression modeling, data cleaning, visualization), 
-                            key insights discovered, and link to GitHub repository or report.
-                        </p>
+                    <div class="project-content">
+                        <h3>Pennsylvania Education and Income Analysis: Exploring Socioeconomic Patterns by Zip Code</h3>
+                        
+                        <p style="margin: 15px 0;"><strong>Project Overview:</strong> Conducted a comprehensive geospatial analysis combining Pennsylvania college graduation rates with median household income data across 1,690+ zip codes to identify socioeconomic patterns and educational attainment relationships.</p>
+                        
+                        <p style="margin: 15px 0;"><strong>Tools & Technologies:</strong> SAS (PROC IMPORT, PROC MEANS, PROC UNIVARIATE, PROC SGPLOT), Data Management, Statistical Analysis</p>
+                        
+                        <p style="margin: 15px 0;"><strong>Methodology:</strong></p>
+                        <ul style="margin-left: 20px;">
+                            <li>Imported and merged two large datasets: Pennsylvania graduation rates by zip code and national median income data</li>
+                            <li>Performed extensive data cleaning including standardizing zip code formats, handling missing values, and validating geographic consistency</li>
+                            <li>Created three analytical datasets through strategic data partitioning: matched records (1,690 zip codes), records with missing income data (33 zip codes), and records without graduation data</li>
+                            <li>Segmented college graduation rates into quartile-based groups (Low, Med-Low, Med-High, High) using PROC UNIVARIATE for distribution analysis</li>
+                            <li>Calculated aggregate statistics by graduation group using PROC MEANS and PROC TABULATE</li>
+                            <li>Visualized relationships between population density, income levels, and educational attainment using scatter plots</li>
+                        </ul>
+                        
+                        <p style="margin: 15px 0;"><strong>Key Findings:</strong></p>
+                        <ul style="margin-left: 20px;">
+                            <li><strong>Data Coverage:</strong> Successfully matched 1,690 Pennsylvania zip codes between education and income datasets, representing comprehensive statewide coverage</li>
+                            <li><strong>Missing Data Patterns:</strong> Identified 33 zip codes with missing income data, primarily in low-population areas across Texas and California where income data collection was challenging</li>
+                            <li><strong>Exponential Income Relationship:</strong> Discovered a strong exponential relationship between college graduation quartiles and median income - areas with higher graduation rates showed disproportionately higher income levels</li>
+                            <li><strong>High-Achiever Outlier:</strong> The "High" college graduation group exhibited significantly elevated income and population metrics compared to other quartiles, suggesting clustering of educated populations in specific geographic areas</li>
+                            <li><strong>Progressive Graduation Impact:</strong> Each successive quartile (Low → Med-Low → Med-High → High) demonstrated measurable increases in both median income and population density, validating education's role in economic development</li>
+                        </ul>
+                        
+                        <p style="margin: 15px 0;"><strong>Business Applications:</strong> This analysis provides valuable insights for educational policy makers, real estate developers, and economic development organizations seeking to understand the relationship between educational infrastructure and regional prosperity. The methodology demonstrates skills in data integration, geographic analysis, and identifying actionable socioeconomic trends.</p>
+                        
+                        <p style="margin: 15px 0;"><strong>Technical Highlights:</strong></p>
+                        <ul style="margin-left: 20px;">
+                            <li>Complex data merging using SAS BY-group processing with multiple datasets</li>
+                            <li>Custom formatting and labeling for categorical variables using PROC FORMAT</li>
+                            <li>Statistical distribution analysis using PROC UNIVARIATE to determine meaningful quartile breakpoints</li>
+                            <li>Conditional logic implementation for data categorization and subsetting</li>
+                            <li>Summary statistics generation with OUTPUT statements for downstream analysis</li>
+                            <li>Professional data visualization using PROC SGPLOT scatter plots</li>
+                        </ul>
                     </div>
                 </div>
             </section>
