@@ -19,10 +19,9 @@
         }
         
         .container {
-            max-width: 900px;
-            margin: 0 auto;
+            width: 100%;
+            margin: 0;
             background-color: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -110,9 +109,12 @@
         
         /* Content Pages */
         .content {
-            padding: 40px;
+            padding: 40px 60px;
             flex-grow: 1;
             display: none;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
         }
         
         .content.active {
@@ -171,7 +173,7 @@
         
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
         }
         
